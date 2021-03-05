@@ -15,6 +15,8 @@ public class Ex02 {
         System.out.printf("Data de vencimento: %tF\n", vencimento);
 
         int diaDaSemana = vencimento.get(Calendar.DAY_OF_WEEK);
+
+        // verifica se está no sábado ou no domingo
         if (diaDaSemana == 7) {
             vencimento.add(Calendar.DATE, 2);
             System.out.printf("Data real de vencimento: %tF\n", vencimento);
